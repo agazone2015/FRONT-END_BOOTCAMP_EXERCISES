@@ -1,0 +1,25 @@
+<h1>Blog</h1>
+
+<header class="search">
+    <input type="text" class="form-control" placeholder="Szukaj wpisów" ng-disabled="!posts" ng-model="query.title">
+    <div class="radio">
+        <label>
+            <input type="radio" name="order" ng-model="order" value="+title" ng-checked="true"> Rosnąco
+        </label>
+
+        <label>
+            <input type="radio" name="order" ng-model="order" value="-title"> Malejąco
+        </label>
+    </div>
+</header>
+
+<section class="posts">
+
+    <article class="post" ng-repeat="post in posts | filter: query | orderBy: order | limitTo: 15">
+        <h4>
+            <a ng-href="/#!/blog/{{ post.id }}">{{ post.title }}</a>
+        </h4>
+        <div>{{ post.body | limitTo: 20 }}...</div>
+    </article>
+
+</section>

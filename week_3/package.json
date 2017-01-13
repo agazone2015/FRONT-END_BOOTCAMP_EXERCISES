@@ -1,0 +1,15 @@
+{
+  "name": "bootcamp-week-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "eduweb",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.2",
+    "yargs": "^6.3.0"
+  }
+}

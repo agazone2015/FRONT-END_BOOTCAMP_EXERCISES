@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <h1>TYDZIEN 1</h1>
+    
+    <h2>ZADANIE 2</h2>
+    <hr>
+    <br/ >
+
+    <div class="container">
+
+        <h1 class="info">Zadanie a. Zaznacz na zielono wszystkie elementy &lt;div&gt;, posiadające zarówno klasę "grid" oraz klasę "grid-12"</h1>
+
+        <div class="row">
+            <div class="grid grid-12">Cell 1</div>
+        </div>
+        <div class="row">
+            <div class="grid grid-6">Cell 3</div>
+            <div class="grid grid-6">Cell 2</div>
+        </div>
+        <div class="row">
+            <div class="grid grid-12">Cell 4</div>
+        </div>
+        <div class="row">
+            <div class="grid grid-6">Cell 5</div>
+            <div class="grid grid-6">Cell 6</div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h1 class="info">Zadnie b. Zaznacz na zielono wszystkie elementy &lt;a&gt;, których atrybut "href" zaczyna się na "http", znajdujące się w elemencie o klasie "nav"</h1>
+
+        <nav class="list">
+            <ol>
+                <li>1. <a href="script.js">JS file</a></li>
+                <li>2. <a href="https://www.google.com.au">Google Search</a></li>
+                <li>3. <a href="http://www.theage.com.au/">The Age</a></li>
+            </ol>
+        </nav>
+
+    </div>
+
+    <div class="container">
+
+        <h1 class="info">Zadanie c. Zaznacz na zielono wszystkie elementy &lt;input&gt;, których typ to "radio" lub "checkbox" oraz dodatkowo nie są aktualnie zaznaczone (checked).</h1>
+
+        <form id="text" action="">
+            <label>Imię:</label> <input type="text" name="name">
+            <br><br>
+            <label>Polak:</label> <input type="radio" name="nationality" value="polak" checked>
+            <label>Szwed:</label> <input type="radio" name="nationality" value="szwed">
+            <br><br>
+            <label>Obywatel Szwecji?</label> <input type="checkbox">
+        </form>
+
+    </div>
+
+    <div class="container">
+
+        <h1 class="info">Zadanie d. Wyłącznie pierwszy element &lt;p&gt;, który jest pusty (nie zawiera dzieci) oraz znajduje się w elemencie &lt;div&gt; z identyfikatorem "text"</h1>
+
+        <div id="text" class="text">
+            <p>Posiada dziecko, <strong>strong</strong> zatem nie jest zaznoczone.</p>
+            <p>Posiada dziecko, <strong>strong</strong> zatem nie jest zaznoczone.</p>
+            <p></p>
+            <p>Ten paragraf nie ma dzieci, wiec jest zaznaczony.</p>
+            <p></p>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h1 class="info">Zadanie e. Wszystkie elementy z klasą "pagination-item", które nie są elementem &lt;span&gt;</h1>
+
+        <div class="pagination">
+            <a href="/page/1" class="pagination-item">1</a>
+            <span class="pagination-item">2</span>
+            <a href="/page/2" class="pagination-item">3</a>
+            <span class="pagination-item">4</span>
+
+        </div>
+
+    </div>
+    
+    
+    
+     <h2>ZADANIE 3</h2>
+      <hr>
+    <br/ >
+    
+    <button id="toggle-nav" class="toggle-nav">
+    <i class="fa fa-bars"></i>
+</button>
+
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">O nas</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Aktualności</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Kontakt</a></li>
+    </ul>
+</nav>
+
+
+
+<h2>ZADANIE 4</h2>
+    <hr>
+    <br/ >
+    
+  <div class="container">
+
+        <h1 class="info">Dodaj użytkownika</h1>
+
+        <form action="#" id="add-user" class="form">
+            <input type="text" name="user" placeholder="Imię">
+            <button type="submit">Dodaj</button>
+        </form>
+
+    </div>
+    
+    
+  <h2>ZADANIE 5</h2>
+    <hr>
+    <br/ >
+      
+    
+      <div class="spis">
+
+        <h1 class="info">Lista użytkowników</h1>
+
+        <button id="getUsers" type="submit">Pobierz dane</button>
+
+    </div>
+
+<script id="userTemplate" type="text/x-template">
+    <p>Name: {{ name }}</p>
+    <p>Username: {{ username }}</p>
+    <p>E-mail: {{ email }}</p>
+    <p>Phone: {{ phone }}</p>
+</script>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.transit.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

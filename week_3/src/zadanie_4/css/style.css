@@ -1,0 +1,22 @@
+.container {
+    float: none;
+}
+
+.error {
+    margin-top: 10px;
+
+    color: #ff0000;
+}
+
+.ng-dirty.ng-invalid.checkbox {
+    color: #ff0000;
+}
+
+.ng-dirty.ng-invalid,
+.ng-touched.ng-invalid {
+    border-color: #ff0000;
+}
+
+.ng-dirty.ng-valid {
+    border-color: #24B739;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   
+    <h1>TYDZIEN 3</h1>
+    
+    <h2>ZADANIE 4</h2>
+    <hr>
+    <br/ >
+    <div class="container" ng-app="formValidator" ng-controller = "FormControler">
+
+        <h1>Formularz rejestracyjny</h1>
+
+        <br>
+
+        <form class="fomr" name="registrationForm" novalidate ng-submit="register()" ng-show="!successfullySubmitted">
+          <div class="field">
+            <input type="text" name="nameField" placeholder="Imię" ng-model="user.name" ng-required = "true">
+            <p class="error text-center"  ng-show="registrationForm.nameField.$invalid && registrationForm.nameField.$touched">Wpisz imie</p>
+          </div>
+          <div class="field">
+            <input type="text" name="surnameField" placeholder="Naziwsko">
+          </div>
+          <div class="field">
+            <input type="email" name="emailField" placeholder="Email" ng-model="user.email" ng-required = "true">
+            <p class="error text-center"  ng-show="registrationForm.emailField.$invalid && registrationForm.emailField.$touched">Wpisz poprawny adresu email</p>
+          </div>
+          <div class="field">
+            <input type="password" name="passwordField" placeholder="Hasło" ng-model="user.password" ng-required = "true" ng-minlength = "5">
+            <p class="error text-center"  ng-show="registrationForm.passwordField.$invalid && registrationForm.passwordField.$touched">Hasło musi miec min 5 znakow</p>
+          </div>
+          <div class="checkboxField" ng-class="{'ng-invalid':registrationForm.terms.$invalid, 'ng-dirty:registrationForm.terms.$dirty'}">
+           <br/ >
+            <input type="checkbox" checked="checked" ng-model="user.terms" ng-required = "true">
+            <span>Akceptuje regulamin</span>
+          </div>
+          <br/ >
+          <button type="submit" ng-disabled="registrationForm.$invalid">Wyślij dane</button>
+        </form>
+
+        <h4 class="successfullySubmitted" ng-show="successfullySubmitted">Dziękuję za rejestrację, {{user.name}}  !</h4>
+
+    </div>
+
+<script src="js/angular.min.js"></script>
+<script src="js/validator.js"></script>
+
+</body>
+</html>

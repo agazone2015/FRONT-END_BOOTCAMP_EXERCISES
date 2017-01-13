@@ -1,0 +1,144 @@
+@charset "utf-8"; /*-----------------------------*/
+/*            RESET            */
+/*-----------------------------*/
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+html, body, div, span, applet, object, iframe,
+h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h1, h2 {
+    margin-top: 40px;
+    text-align: center;
+    
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: none;
+}
+
+input[type="radio"] {
+  -webkit-appearance: radio;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+}
+
+/*-----------------------------*/
+/*           STYLES            */
+/*-----------------------------*/
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.heading {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #000000;
+}
+
+#output {
+    padding: 20px;
+    margin-top: 20px;
+    background: #E2E2E2;
+
+    font: 14px 'Courier New', monospace;
+}
+
+#button, .button {
+    padding: 10px 20px 8px 20px;
+    border: none;
+    background: #89D834;
+
+    cursor: pointer;
+
+    font: 16px/1 Helvetica, Arial, sans-serif;
+}
+
+
+.section {
+    
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #E2E2E2;
+    line-height: 1.4;
+}
